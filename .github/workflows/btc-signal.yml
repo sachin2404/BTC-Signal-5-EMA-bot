@@ -17,7 +17,7 @@ jobs:
       - run: pip install requests pandas
       - name: Run bot
         env:
-          TG_TOKEN: ${{ secrets.TG_TOKEN }}
-          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+          TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           MODE: once
         run: python btc_signal_bot.py
